@@ -7,19 +7,14 @@ function BhaTable() {
             style={{ height: '400px' }}
             data={[ ...products ]}
         >
-            <Column field="ProductID" title="ID" width="40px" />
-            <Column field="ProductName" title="Name" width="250px" />
-            <Column field="Category.CategoryName" title="CategoryName" />
-            <Column field="UnitPrice" title="Price" />
-            <Column field="UnitsInStock" title="In stock" />
-            <Column
-                field="Discontinued"
-                cell={props => (
-                    <td>
-                        <input disabled type="checkbox" checked={props.dataItem[props.field]} />
-                    </td>
-                )}
-            />
+            <Column field="ProductID" title="ID" width="0px" editable={false} show={false} />
+            <Column field="comp" title="Component" width="200px" />
+            <Column field="sn" title="Serial #" width="150px" />
+            <Column field="length" title="Length (m)" editor="numeric" width="100px" />
+            <Column field="od" title="OD (mm)" editor="numeric" width="100px" />
+            <Column field="id" title="ID (mm)" editor="numeric" width="100px" />
+            <Column field="descrip" title="Description" />
+            {/* <Column cell={this.CommandCell} width="100px" /> */}
         </Grid>
     );
 }
