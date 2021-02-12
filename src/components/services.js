@@ -1,4 +1,4 @@
-import { sampleProducts } from "./sample-products.jsx";
+import { sampleProducts } from "../sample-products.jsx";
 
 let data = [...sampleProducts];
 

@@ -9,7 +9,10 @@ import {
 import { MyCommandCell } from "./myCommandCell.jsx";
 import { insertItem, getItems, updateItem, deleteItem } from "./services.js";
 
+
+
 class BhaApp extends React.Component {
+    
     editField = "inEdit";
     state = {
         data: []
@@ -20,7 +23,7 @@ class BhaApp extends React.Component {
             data: getItems(),
             // data: []
         });
-    }
+    }s
 
     CommandCell = props => (
         <MyCommandCell
