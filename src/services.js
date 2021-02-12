@@ -1,6 +1,8 @@
-import { sampleProducts } from "../sample-products.jsx";
+// import { sampleProducts } from "./sample-products.jsx";
+// import { products } from './products.jsx';
+import { components } from './components.jsx';
 
-let data = [...sampleProducts];
+let data = [...components];
 
 const generateId = data =>
     data.reduce((acc, current) => Math.max(acc, current.ProductID), 0) + 1;
